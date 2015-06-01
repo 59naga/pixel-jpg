@@ -2,7 +2,7 @@
 PixelUtil= (require 'pixel-util').PixelUtil
 jpegJs= require 'jpeg-js'
 
-class PixelJpg extends PixelUtil
+class PixelJpeg extends PixelUtil
   parse: (file)->
     @createBuffer file
     .then (buffer)=>
@@ -16,5 +16,5 @@ class PixelJpg extends PixelUtil
 
       [image]
 
-module.exports= new PixelJpg
-module.exports.PixelJpg= PixelJpg
+module.exports= new PixelJpeg
+module.exports.PixelJpeg= PixelJpeg

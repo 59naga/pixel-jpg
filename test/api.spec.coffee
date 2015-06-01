@@ -1,11 +1,11 @@
 # Dependencies
-pixelJpg= require '../src'
+pixelJpeg= require '../src'
 fixture= (require 'fixture-images').still.jpg
 
 # Specs
-describe 'pixelJpg',->
+describe 'pixelJpeg',->
   it '.parse', (done)->
-    pixelJpg.parse fixture
+    pixelJpeg.parse fixture
     .then (images)->
       image= images[0]
 

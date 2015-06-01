@@ -1,21 +1,21 @@
-# PixelJpg [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
+# PixelJpeg [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
 
 [![Sauce Test Status][sauce-image]][sauce]
 
-> Parse JPEG to ImageData in cross-platform.
+> Parse Jpeg to ImageData in cross-platform.
 
 ## Installation
 ```bash
 $ npm install pixel-jpg --save
 ```
 ```js
-var pixelJpg= require('pixel-jpg');
-console.log(pixelJpg); //function
+var pixelJpeg= require('pixel-jpg');
+console.log(pixelJpeg); //object
 ```
 
 # API
 
-## pixelJpg.parse(`file`) -> promise.then(`images`)
+## pixelJpeg.parse(`file`) -> promise.then(`images`)
 
 return `images` is Array contains one or more `ImageData`.
 > Return the `object` instead of `ImageData` in Node.js
@@ -23,7 +23,7 @@ return `images` is Array contains one or more `ImageData`.
 ```js
 var file= 'https://59naga.github.io/fixtures/still.JPG';
 
-pixelJpg.parse(file).then(function(images){
+pixelJpeg.parse(file).then(function(images){
   console.log(images[0]);
 });
 // {width: 256, height: 192, data: <Uint8Array ..>}
