@@ -1,4 +1,4 @@
-# PixelJpeg [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
+# PixelJpg [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
 
 [![Sauce Test Status][sauce-image]][sauce]
 
@@ -18,7 +18,7 @@ console.log(pixelJpg); //function
 ## pixelJpg.parse(`file`) -> promise.then(`images`)
 
 return `images` is Array contains one or more `ImageData`.
-> Return the `object` instead of `ImageData` at Node.js
+> Return the `object` instead of `ImageData` in Node.js
 
 ```js
 var file= 'https://59naga.github.io/fixtures/still.JPG';
