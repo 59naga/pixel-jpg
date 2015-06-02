@@ -2,7 +2,7 @@
 
 [![Sauce Test Status][sauce-image]][sauce]
 
-> Parse Jpeg to ImageData in cross-platform.
+> Parse JPEG to ImageData in cross-platform.
 
 ## Installation
 ```bash
