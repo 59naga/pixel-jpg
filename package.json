@@ -48,14 +48,14 @@
 
   "keywords": [
     "pixel",
-    "gif"
+    "jpg"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/59naga/pixel-gif.git"
+    "url": "git+https://github.com/59naga/pixel-jgp.git"
   },
   "bugs": {
-    "url": "https://github.com/59naga/pixel-gif/issues"
+    "url": "https://github.com/59naga/pixel-jgp/issues"
   },
-  "homepage": "https://github.com/59naga/pixel-gif#readme"
+  "homepage": "https://github.com/59naga/pixel-jgp#readme"
 }
