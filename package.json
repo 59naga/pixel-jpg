@@ -12,27 +12,26 @@
   },
 
   "scripts": {
-    "start": "jasminetea test --verbose --watch",
+    "start": "jasminetea --watch",
     "localhost": "zuul test/api.spec --local 59798 --open",
 
-    "cover": "jasminetea test --verbose --cover --report",
-    "test": "npm run cover",
-    "posttest": "zuul test/api.spec && echo Perfect posttest || echo Ignored posttest",
+    "test": "jasminetea --cover --report --lint",
 
     "prepublish": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && npm run compile || echo skip prepublish",
     "compile": "coffee --bare --compile index.coffee",
-    "postcompile": "coffee --output lib --bare --compile src"
+    "postcompile": "coffee --output lib --bare --compile src",
+    "postpublish": "zuul test/api.spec && echo skip || echo skip"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run cover"
+      "pre-commit": "npm run test"
     }
   },
   
   "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
   "license": "MIT",
   "dependencies": {
-    "jpeg-js": "^0.1.1",
+    "jpeg-js": "git://github.com/59naga/jpeg-js",
     "pixel-util": "0.0.0-beta.2"
   },
   "devDependencies": {
@@ -41,8 +40,8 @@
     "coffeeify": "^1.1.0",
     "fixture-images": "^0.1.3",
     "ghooks": "^0.3.2",
-    "jasminetea": "^0.2.0-beta.1",
-    "object-parser-cli": "0.0.0",
+    "jasminetea": "^0.2.1-alpha.2",
+    "varify": "^0.1.1",
     "zuul": "^3.0.0"
   },
 
