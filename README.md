@@ -29,13 +29,15 @@ pixelJpeg.parse(file).then(function(images){
 // {width: 256, height: 192, data: <Uint8Array ..>}
 ```
 
-# See
-* [pixel](https://github.com/59naga/pixel/)
+# Related projects
 * [pixel-util](https://github.com/59naga/pixel-util/)
 * [pixel-gif](https://github.com/59naga/pixel-gif-/)
 * [pixel-png](https://github.com/59naga/pixel-png/)
 * __pixel-jpg__
 * [pixel-bmp](https://github.com/59naga/pixel-bmp/)
+* [pixel](https://github.com/59naga/pixel/)
+* [pixel-to-ansi](https://github.com/59naga/pixel-to-ansi/)
+* [pixel-to-svg](https://github.com/59naga/pixel-to-svg/)
 
 License
 ---

@@ -1,6 +1,6 @@
 {
   "name": "pixel-jpg",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "description": "Parse JPEG to ImageData in cross-platform",
 
   "files": [
@@ -16,15 +16,15 @@
     "localhost": "zuul test/api.spec --local 59798 --open",
 
     "test": "jasminetea --cover --report --lint",
+    "test-cloud": "zuul test/api.spec",
 
     "prepublish": "node -e \"if(process.env.TRAVIS){}else{process.exit(1)}\" && npm run compile || echo skip prepublish",
     "compile": "coffee --bare --compile index.coffee",
-    "postcompile": "coffee --output lib --bare --compile src",
-    "postpublish": "zuul test/api.spec && echo skip || echo skip"
+    "postcompile": "coffee --output lib --bare --compile src"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test"
+      "pre-commit": "npm test"
     }
   },
   
@@ -32,7 +32,7 @@
   "license": "MIT",
   "dependencies": {
     "jpeg-js": "git://github.com/59naga/jpeg-js",
-    "pixel-util": "0.0.0-beta.2"
+    "pixel-util": "0.0.0-beta.3"
   },
   "devDependencies": {
     "brfs": "^1.4.0",
@@ -53,10 +53,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/59naga/pixel-jgp.git"
+    "url": "git+https://github.com/59naga/pixel-jpg.git"
   },
   "bugs": {
-    "url": "https://github.com/59naga/pixel-jgp/issues"
+    "url": "https://github.com/59naga/pixel-jpg/issues"
   },
-  "homepage": "https://github.com/59naga/pixel-jgp#readme"
+  "homepage": "https://github.com/59naga/pixel-jpg#readme"
 }
