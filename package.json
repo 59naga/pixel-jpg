@@ -31,7 +31,7 @@
   "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
   "license": "MIT",
   "dependencies": {
-    "jpeg-js": "git://github.com/59naga/jpeg-js",
+    "jpeg-js": "git://github.com/59naga/jpeg-js#9bbab23ae29393b181c7b4648a0478d8fa61e7af",
     "pixel-util": "0.0.0-beta.3"
   },
   "devDependencies": {
