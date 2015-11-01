@@ -1,6 +1,6 @@
 {
   "name": "pixel-jpg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse JPEG to ImageData in cross-platform",
 
   "main": "lib",
@@ -28,7 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "jpeg-js": "git://github.com/59naga/jpeg-js.git#b52fdd73dfebcee63c88b9f0b9502ba2b9bfd155",
-    "pixel-util": "^0.0.1",
+    "pixel-util": "^0.0.2",
     "varify": "^0.1.1"
   },
   "devDependencies": {
