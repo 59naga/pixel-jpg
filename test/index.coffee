@@ -3,7 +3,7 @@ pixelJpeg= require '../src'
 fixture= (require 'fixture-images').still.jpg
 
 # Specs
-describe 'pixelJpeg',->
+describe 'pixelJpg',->
   it '.parse', (done)->
     pixelJpeg.parse fixture
     .then (images)->
