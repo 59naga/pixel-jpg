@@ -28,7 +28,8 @@
   "license": "MIT",
   "dependencies": {
     "jpeg-js": "git://github.com/59naga/jpeg-js.git#b52fdd73dfebcee63c88b9f0b9502ba2b9bfd155",
-    "pixel-util": "^0.0.1"
+    "pixel-util": "^0.0.1",
+    "varify": "^0.1.1"
   },
   "devDependencies": {
     "brfs": "^1.4.1",
